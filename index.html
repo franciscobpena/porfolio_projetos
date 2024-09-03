@@ -47,7 +47,7 @@
                             Além dos projetos, você encontrará mais detalhes sobre minha experiência profissional e principais resultados.</p>
                     </div>
                     <span class="image object">
-                        <img src="images/francisco.jpg" alt="" />
+                        <img src="images/francisco.jpg" alt="Foto de Francisco Pena" />
                     </span>
                 </section>
 
@@ -136,7 +136,7 @@
                     </header>
                     <div class="posts">
                         <article>
-                            <a href="#" class="image"><img src="images/painel.gif" alt="" /></a>
+                            <a href="#" class="image"><img src="images/painel.gif" alt="Painel Gerencial para Negócio com Streamlit" /></a>
                             <h3 id="project4-title">Desenvolvimento de um Painel Gerencial para Negócio com Streamlit</h3>
                             <p id="project4-text">Neste projeto, os conceitos de Programação em Python, manipulação de dados, pensamento estratégico e lógica de negócio, junto com ferramentas de desenvolvimento web como Streamlit e GitHub, foram utilizados para desenvolver um painel gerencial com as principais métricas de uma empresa de marketplace de delivery de comida na Índia. O resultado final do projeto foi um painel hospedado em um ambiente Cloud e disponibilizado através de um link web. O painel pode ser acessado por qualquer dispositivo conectado à internet.</p>
                             <h4 id="project4-tools-header">Ferramentas Utilizadas</h4>
@@ -153,20 +153,20 @@
                             </ul>
                         </article>
                         <article>
-                            <a href="#" class="image"><img src="images/olist.jpg" alt="" /></a>
+                            <a href="#" class="image"><img src="images/olist.jpg" alt="Análise Exploratória de Dados (EDA) de uma Empresa de E-commerce (Olist) utilizando SQL" /></a>
                             <h3 id="project1-title">Análise Exploratória de Dados (EDA) de uma Empresa de E-commerce (Olist) utilizando SQL</h3>
                             <p id="project1-text">Realizei uma análise detalhada em SQL segmentando clientes por avaliações, frequência de compra e categorias de produtos. Os principais insights indicam que, apesar da alta satisfação, a retenção de clientes está em queda, exigindo foco em estratégias de fidelização. Produtos de alto valor, como tecnologia, oferecem oportunidades para cross-selling, e otimizar os prazos de entrega é crucial para manter a satisfação do cliente.</p>
                             <h4 id="project1-tools-header">Ferramentas Utilizadas</h4>
                             <ul>
                                 <li>SQL</li>
-                                <li>SQLITE</li>
+                                <li>SQLITE como banco de dados</li>
                             </ul>
                             <ul class="actions">
                                 <li><a href="https://docs.google.com/presentation/d/1XrA6eFyJuChnKOQRKQ3HxymrKL7oq1hz/edit?usp=sharing&ouid=100127589008142410245&rtpof=true&sd=true" class="button">Saiba Mais</a></li>
                             </ul>
                         </article>
                         <article>
-                            <a href="#" class="image"><img src="images/pbiolist.gif" alt="" /></a>
+                            <a href="#" class="image"><img src="images/pbiolist.gif" alt="Power BI para E-commerce: Monitoramento Estratégico de Indicadores de Performance na Olist" /></a>
                             <h3 id="project2-title">Power BI para E-commerce: Monitoramento Estratégico de Indicadores de Performance na Olist</h3>
                             <p id="project2-text">Desenvolvi um relatório utilizando o processo de ETL (Extract, Transform, Load) para monitorar indicadores-chave de desempenho (KPIs) em três dimensões principais: Vendas, Logística e Qualidade. O relatório oferece uma visão estratégica do desempenho operacional da Olist, consolidando dados de várias fontes e transformando-os em informações acionáveis para a tomada de decisões.</p>
                             <h4 id="project2-tools-header">Ferramentas Utilizadas</h4>
@@ -181,7 +181,7 @@
                             </ul>
                         </article>
                         <article>
-                            <a href="#" class="image"><img src="images/inadimplencia.jpg" alt="" /></a>
+                            <a href="#" class="image"><img src="images/inadimplencia.jpg" alt="Aplicação do Lean Seis Sigma como método para redução do nível de inadimplência de clientes" /></a>
                             <h3 id="project3-title">Aplicação do Lean Seis Sigma como método para redução do nível de inadimplência de clientes</h3>
                             <p id="project3-text">Realizei uma análise detalhada da inadimplência no setor de alimentos e bebidas em uma empresa do varejo. O estudo identifica e avalia as principais variáveis críticas (X’s vitais) que influenciam a inadimplência (Y), um desafio para empresas que buscam otimizar o fluxo de caixa e garantir ganhos financeiros sustentáveis.</p>
                             <h4 id="project3-tools-header">Ferramentas Utilizadas</h4>
@@ -204,7 +204,7 @@
                         <h1 id="contact-header">Contato</h1>
                     </header>
                     <ul class="icons">
-                        <li><a href="https://drive.google.com/file/d/1Chr6BYdnQcI5WC-pexfxpGnKTir7Y4Y2/view?usp=sharing" class="icon fas fa-file-alt fa-3x"><span class="label">Currículo</span></a></li>
+                        <li><a id="cv-link" href="https://drive.google.com/file/d/1Chr6BYdnQcI5WC-pexfxpGnKTir7Y4Y2/view?usp=sharing" class="icon fas fa-file-alt fa-3x"><span class="label">Currículo</span></a></li>
                         <li><a href="https://wa.me/5531998489396" class="icon brands fa-whatsapp fa-3x"><span class="label">WhatsApp</span></a></li>
                         <li><a href="https://www.linkedin.com/in/franciscobahiapena/" class="icon brands fa-linkedin fa-3x"><span class="label">LinkedIn</span></a></li>
                         <li><a href="mailto:bahiapenafrancisco@gmail.com" class="icon solid fa-envelope fa-3x"><span class="label">E-mail</span></a></li>
@@ -215,6 +215,7 @@
                 <script>
                     document.getElementById("flag-icon").addEventListener("click", function() {
                         var currentLang = document.documentElement.lang;
+                        var cvLink = document.getElementById("cv-link");
 
                         if (currentLang === "pt") {
                             // Mudar para inglês
@@ -258,11 +259,8 @@
                             document.getElementById("project2-text").innerText = "I developed a report using the ETL (Extract, Transform, Load) process to monitor key performance indicators (KPIs) in three main dimensions: Sales, Logistics, and Quality. The report provides a strategic view of Olist's operational performance, consolidating data from various sources and transforming them into actionable insights for decision-making.";
                             document.getElementById("project3-title").innerText = "Application of Lean Six Sigma as a Method to Reduce Customer Delinquency Levels";
                             document.getElementById("project3-text").innerText = "I conducted a detailed analysis of delinquency in the food and beverage sector at a retail company. The study identifies and evaluates the main key variables (vital X's) that influence delinquency (Y), a challenge for companies seeking to optimize cash flow and ensure sustainable financial gains.";
-                            document.getElementById("project4-tools-header").innerText = "Tools";
-                            document.getElementById("project1-tools-header").innerText = "Tools";
-                            document.getElementById("project2-tools-header").innerText = "Tools";
-                            document.getElementById("project3-tools-header").innerText = "Tools";
                             document.getElementById("contact-header").innerText = "Contact";
+                            cvLink.href = "https://drive.google.com/file/d/1IlHpeMr4fYoX5Q7I1AwAJGT855QTrNlu/view?usp=sharing";
                             this.src = "images/ic-flag-portuguese.svg";
                         } else {
                             // Mudar para português
@@ -272,7 +270,7 @@
                             document.getElementById("about-me-header").innerText = "Sobre mim";
                             document.getElementById("about-me-title").innerText = "Meu nome é Francisco Pena";
                             document.getElementById("about-me-text1").innerText = "Sou Engenheiro Metalúrgico pela Universidade Federal de Ouro Preto, com especialização em Qualidade e Produtividade pela USP, e atualmente estou cursando uma especialização em Analytics e Inteligência Artificial pela FIA.";
-                            document.getElementId("about-me-text2").innerText = "Com mais de 9 anos de experiência, tenho atuado na liderança de projetos de Excelência Operacional e Transformação Digital em grandes empresas nacionais e multinacionais, abrangendo setores como consultoria, saúde, mercado financeiro e varejo.";
+                            document.getElementById("about-me-text2").innerText = "Com mais de 9 anos de experiência, tenho atuado na liderança de projetos de Excelência Operacional e Transformação Digital em grandes empresas nacionais e multinacionais, abrangendo setores como consultoria, saúde, mercado financeiro e varejo.";
                             document.getElementById("about-me-text3").innerText = "Além disso, tenho dedicado o meu tempo no desenvolvimento de projetos em Ciência de Dados para aprimorar minha capacidade de resolver problemas de negócios e alavancar resultados, aplicando novas tecnologias e métodos de acordo com o contexto e as necessidades específicas do negócio.";
                             document.getElementById("skills-header").innerText = "Habilidades";
                             document.getElementById("skills-programming-header").innerText = "Linguagens de Programação e Banco de Dados";
@@ -306,11 +304,8 @@
                             document.getElementById("project2-text").innerText = "Desenvolvi um relatório utilizando o processo de ETL (Extract, Transform, Load) para monitorar indicadores-chave de desempenho (KPIs) em três dimensões principais: Vendas, Logística e Qualidade. O relatório oferece uma visão estratégica do desempenho operacional da Olist, consolidando dados de várias fontes e transformando-os em informações acionáveis para a tomada de decisões.";
                             document.getElementById("project3-title").innerText = "Aplicação do Lean Seis Sigma como método para redução do nível de inadimplência de clientes";
                             document.getElementById("project3-text").innerText = "Realizei uma análise detalhada da inadimplência no setor de alimentos e bebidas em uma empresa do varejo. O estudo identifica e avalia as principais variáveis críticas (X’s vitais) que influenciam a inadimplência (Y), um desafio para empresas que buscam otimizar o fluxo de caixa e garantir ganhos financeiros sustentáveis.";
-                            document.getElementById("project4-tools-header").innerText = "Ferramentas Utilizadas";
-                            document.getElementById("project1-tools-header").innerText = "Ferramentas Utilizadas";
-                            document.getElementById("project2-tools-header").innerText = "Ferramentas Utilizadas";
-                            document.getElementById("project3-tools-header").innerText = "Ferramentas Utilizadas";
                             document.getElementById("contact-header").innerText = "Contato";
+                            cvLink.href = "https://drive.google.com/file/d/1Chr6BYdnQcI5WC-pexfxpGnKTir7Y4Y2/view?usp=sharing";
                             this.src = "images/ic-flag-english.svg";
                         }
                     });
@@ -321,4 +316,3 @@
     </div>
 </body>
 </html>
-
