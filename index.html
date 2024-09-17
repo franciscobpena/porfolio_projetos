@@ -218,6 +218,15 @@
                         var newLang = currentLang === "pt" ? "en" : "pt";
                         document.documentElement.lang = newLang;
 
+                        var flagIcon = document.getElementById("flag-icon");
+                        if (newLang === "pt") {
+                            flagIcon.src = "images/ic-flag-english.svg";
+                            flagIcon.alt = "Mudar idioma";
+                        } else {
+                            flagIcon.src = "images/ic-flag-portuguese.svg";
+                            flagIcon.alt = "Switch Language";
+                        }
+
                         var elementsToTranslate = document.querySelectorAll('[data-key]');
                         elementsToTranslate.forEach(function(element) {
                             var key = element.getAttribute('data-key');
