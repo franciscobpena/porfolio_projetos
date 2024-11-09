@@ -1263,7 +1263,36 @@
             <div class="container">
                 <h2 class="section-title" data-key="projects-header">Projetos</h2>
                 
-                <div class="projects-grid">
+                <div class="projects-grid"> 
+                    <!-- Novo Projeto: Lean Hospitals -->
+                    <article class="project-card">
+                        <div class="project-image">
+                            <img src="images/leanhospitais.gif" alt="Lean Hospitals Project" loading="lazy" onerror="handleImageError(this);">
+                        </div>
+                        
+                        <div class="project-content">
+                            <h3 class="project-title" data-key="project6-title">Diagnóstico e Otimização de Processos Hospitalares</h3>
+                            
+                            <p class="project-description justify-text uniform-text" data-key="project6-text">
+                                Neste projeto, os conceitos de Ciência de Dados, Teoria das Filas e Lean Healthcare foram utilizados para desenvolver uma ferramenta de diagnóstico hospitalar. Os resultados principais incluem redução no tempo de espera dos pacientes, otimização da alocação de médicos por especialidade, melhor utilização de salas cirúrgicas e melhor gestão da capacidade instalada. A aplicação web desenvolvida em Python/Streamlit processa dados estruturados em Excel e fornece análises detalhadas do fluxo de pacientes, triagem, consultas, centro cirúrgico e internação, permitindo identificar gargalos operacionais e oportunidades de melhoria através de dashboards interativos.
+                            </p>
+                            
+                            <div class="project-tools">
+                                <span class="tool"><i class="fab fa-python"></i>Python</span>
+                                <span class="tool"><i class="fas fa-globe"></i>Streamlit</span>
+                                <span class="tool"><i class="fas fa-chart-line"></i>Plotly</span>
+                                <span class="tool"><i class="fas fa-database"></i>Pandas</span>
+                                <span class="tool"><i class="fas fa-project-diagram"></i>Graphviz</span>
+                                <span class="tool"><i class="fas fa-chart-bar"></i>Statsmodels</span>
+                            </div>
+                            
+                            <a href="https://github.com/franciscobpena/leanmvp" class="project-link" target="_blank" rel="noopener noreferrer">
+                                <span data-key="learn-more">Saiba Mais</span>
+                                <i class="fas fa-arrow-right"></i>
+                            </a>
+                        </div>
+                    </article>
+                    
                     <!-- Projeto 1 -->
                     <article class="project-card">
                         <div class="project-image">
@@ -1508,6 +1537,8 @@
 
                 // Projetos
                 'projects-header': 'Projetos',
+                'project6-title': 'Diagnóstico e Otimização de Processos Hospitalares',
+                'project6-text': 'Neste projeto, os conceitos de Ciência de Dados, Teoria das Filas e Lean Healthcare foram utilizados para desenvolver uma ferramenta de diagnóstico hospitalar. Os resultados principais incluem redução no tempo de espera dos pacientes, otimização da alocação de médicos por especialidade, melhor utilização de salas cirúrgicas e melhor gestão da capacidade instalada. A aplicação web desenvolvida em Python/Streamlit processa dados estruturados em Excel e fornece análises detalhadas do fluxo de pacientes, triagem, consultas, centro cirúrgico e internação, permitindo identificar gargalos operacionais e oportunidades de melhoria através de dashboards interativos.'
                 'project1-title': 'Credit Scoring para Empréstimos Pessoais',
                 'project1-text': 'Neste projeto, utilizei técnicas de modelagem estatística para desenvolver um modelo de credit scoring para avaliação de solicitantes de empréstimos pessoais. O resultado final do projeto foi um modelo de regressão logística capaz de prever o risco de crédito de novos solicitantes com base em seu histórico financeiro.',
                 'project2-title': 'Power BI para E-commerce: Monitoramento Estratégico',
@@ -1586,6 +1617,8 @@
 
                 // Projetos
                 'projects-header': 'Projects',
+                'project6-title': 'Hospital Process Diagnosis and Optimization',
+                'project6-text': 'In this project, Data Science, Queuing Theory and Lean Healthcare concepts were applied to develop a hospital diagnostic tool. The main results include reduced patient waiting times, optimized physician allocation by specialty, better utilization of surgical rooms and improved installed capacity management. The web application developed in Python/Streamlit processes structured Excel data and provides detailed analysis of patient flow, triage, consultations, surgical center and hospitalization, allowing the identification of operational bottlenecks and improvement opportunities through interactive dashboards.'
                 'project1-title': 'Credit Scoring for Personal Loans',
                 'project1-text': 'In this project, I used statistical modeling techniques to develop a credit scoring model for evaluating personal loan applicants. The final result was a logistic regression model capable of predicting the credit risk of new applicants based on their financial history.',
                 'project2-title': 'Power BI for E-commerce: Strategic Monitoring',
